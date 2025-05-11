@@ -22,7 +22,7 @@ const QuestionCard: React.FC<QuestionCardProps> = ({ className, question }) => {
         <CardTitle>{title}</CardTitle>
         <CardDescription>{description}</CardDescription>
       </CardHeader>
-      <CardContent>
+      <CardContent className="grid grid-cols-3 gap-4">
         {variants.map((variant, idx) => (
           <Button key={idx}>{variant}</Button>
         ))}
